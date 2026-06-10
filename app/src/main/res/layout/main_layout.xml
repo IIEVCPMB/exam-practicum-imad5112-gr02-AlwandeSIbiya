@@ -30,6 +30,9 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
+
+
     <Button
         android:id="@+id/gearbutton"
         android:layout_width="176dp"
