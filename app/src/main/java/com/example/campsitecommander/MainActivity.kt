@@ -36,6 +36,10 @@ class MainActivity : ComponentActivity() {
     lateinit var tvTotalItems: TextView
     lateinit var lvGearList: ListView
 
+    fun startActivityForResult(intent: Any, requestCode: Int) {
+        TODO("Not yet implemented")
+    }
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,7 +76,7 @@ class MainActivity : ComponentActivity() {
                 val calculate = ""
                 tvTotalItems.text = "Total Items Packed: ${calculate TotalItems()}"
 
-                val adapter = object : ArrayAdapter<String>(this, R.layout.item_gear, itemNames) {
+                val adapter = object : ArrayAdapter<String>(this, R.layout.activity_add_gear, itemNames) {
                     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
                         val view = convertView ?: layoutInflater.inflate(R.layout.item_gear, parent, false)
                         view.findViewById<TextView>(R.id.tvItemName).text = itemNames[position]

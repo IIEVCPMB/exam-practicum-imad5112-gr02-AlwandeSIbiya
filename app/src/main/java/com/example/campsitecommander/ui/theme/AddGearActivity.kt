@@ -1,8 +1,15 @@
 package com.example.campsitecommander.ui.theme
 
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Spinner
+import android.widget.Toast
 
-class AddGearActivity  : AppCompatActivity() {
+class AddGearActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,12 +69,19 @@ class AddGearActivity  : AppCompatActivity() {
             Toast.makeText(this, "$name added to your pack!", Toast.LENGTH_SHORT).show()
             finish()
         }
-        {
-}
+
         // Back button - go back without saving
         btnBack.setOnClickListener {
             setResult(RESULT_CANCELED)
             finish()
         }
     }
+}
+
+class R(activityAddGear: Any) {
+    companion object {
+        val id: Any
+        val layout: Any
+    }
+
 }
