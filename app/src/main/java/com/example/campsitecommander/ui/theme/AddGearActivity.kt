@@ -1,5 +1,7 @@
 package com.example.campsitecommander.ui.theme
 
+import androidx.appcompat.app.AppCompatActivity
+
 class AddGearActivity  : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,4 +63,11 @@ class AddGearActivity  : AppCompatActivity() {
             finish()
         }
         {
+}
+        // Back button - go back without saving
+        btnBack.setOnClickListener {
+            setResult(RESULT_CANCELED)
+            finish()
+        }
+    }
 }
