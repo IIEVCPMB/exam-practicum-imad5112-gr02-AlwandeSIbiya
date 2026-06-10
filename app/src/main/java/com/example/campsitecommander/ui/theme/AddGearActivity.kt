@@ -23,6 +23,7 @@ class AddGearActivity : AppCompatActivity() {
         val btnSave = findViewById<Button>(R.id.btnSaveGear)
         val btnBack = findViewById<Button>(R.id.btnBackToBase)
 
+
         // Fill the category dropdown
         val categories = listOf("Shelter", "Food", "Safety", "Cooking", "First Aid", "Other")
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
