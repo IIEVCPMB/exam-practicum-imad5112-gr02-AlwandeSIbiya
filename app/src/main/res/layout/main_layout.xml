@@ -32,31 +32,62 @@
 
 
     <EditText
+        android:id="@+id/additemstxt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:autofillHints=""
+        android:hint="ADD ITEM"
         android:padding="12dp"
-        android:textColorHint="#"
+        android:textColorHint="2B2828"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck">
 
     </EditText>
 
-
     <Button
-        android:id="@+id/gearbutton"
+        android:id="@+id/btngear"
         android:layout_width="176dp"
         android:layout_height="49dp"
         android:text="Add Gear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="564dp" />
+        tools:layout_editor_absoluteY="568dp" />
+
+    <Button
+        android:id="@+id/btnmore"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:text="See More"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="568dp" />
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        android:text="Total Items Packed "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
