@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:background="#669933"
-    android:layout_height="match_parent">
+    android:background="#1b3A2D"
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <!--Name of App-->
 
@@ -19,11 +20,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="405dp"
-        android:layout_height="77dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Campsite Commander"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="#D93D3D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +40,7 @@
         android:autofillHints=""
         android:hint="ADD ITEM"
         android:padding="12dp"
-        android:textColorHint="2B2828"
+        android:textColorHint="D93D3D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
