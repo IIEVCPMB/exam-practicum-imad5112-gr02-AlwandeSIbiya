@@ -72,6 +72,7 @@ class MainActivity : ComponentActivity() {
             }
 
             //--Refresh List and total---
+            @SuppressLint("SetTextI18n")
             fun refreshList {
                 val calculate = ""
                 tvTotalItems.text = "Total Items Packed: ${calculate TotalItems()}"
