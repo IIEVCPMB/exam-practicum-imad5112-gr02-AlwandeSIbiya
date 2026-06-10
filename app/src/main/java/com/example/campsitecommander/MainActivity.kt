@@ -27,32 +27,18 @@ class MainActivity : ComponentActivity() {
             ->
             setContentView(R.layout.main_layout)
 
-            //Link UI components to variables
-            val inputItem = findViewById<EditText>(R.id.additemstxt)
-            val btngear = findViewById<Button>(R.id.btngear)
-            val txtResult= findViewById<TextView>(R.id.txtResult)
 
-            btngear.setOnClickListener {
-                val item = inputItem.text.toString().trim().lowercase()
-                if(item.isEmpty()) {
-                    Toast.makeText(this,"Add gear you like", Toast.LENGTH_SHORT). show()
-                    return@setOnClickListener
-                }
+            //--Parallel Arrays --
+            val itemNames = mutableListOf("Tent","Marshmallows","Flashlght")
+            val itemCategories = mutableListOf("Shelter","Food", "Safety")
+            val itemQuantities = mutableListOf(1,2,3)
+            val itemComments = mutableListOf(
+                "4-person waterproof",
+                  "S'mores",
+                    "Battries (AAA)"
+            )
 
-                val suggestion = when (timeOfDay) {
-                    "morning" -> "Send a Good morning text to a family member"
-                    "mid-morning" -> "Reach out to a colleague with a quick 'Thank you.'"
-                    "afternoon" -> "Share a funny meme with a friend"
-                    "afternoon snack time" -> "Send a quick 'thinking of you' message "
-                    "dinner" -> "Call a friend or relative for a 5-minute catch-up "
-                    "night", "after dinner" -> "Leave a thoughtful comment on a friend's post "
-                    else -> "Invalid time. Try: Morning, Afternoon, Dinner, etc."
-                }
 
-                txtResult.text = suggestion
-            }
-
-            }
 
 
 
