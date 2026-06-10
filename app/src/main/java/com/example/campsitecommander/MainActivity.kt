@@ -69,6 +69,7 @@ class MainActivity : ComponentActivity() {
 
             //--Refresh List and total---
             fun refreshList {
+                val calculate = ""
                 tvTotalItems.text = "Total Items Packed: ${calculate TotalItems()}"
 
                 val adapter = object : ArrayAdapter<String>(this, R.layout.item_gear, itemNames) {
@@ -84,7 +85,7 @@ class MainActivity : ComponentActivity() {
             }
 
             //--Calculate using a loop ---
-            fun calculate TotallItems(): int {
+            fun calculate{} TotallItems(): int {
                 var total = 0
             for (qty in itemQuantities){
                 total+= qty
