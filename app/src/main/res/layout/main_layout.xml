@@ -46,7 +46,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <!--List of Gear-->
+    <ListView
+        android:id="@+id/GearList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="#2E5940"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewTotallItems"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
 
+    </ListView>
 
 
     <EditText
