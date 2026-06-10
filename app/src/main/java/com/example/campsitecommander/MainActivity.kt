@@ -39,6 +39,18 @@ class MainActivity : ComponentActivity() {
                     return@setOnClickListener
                 }
 
+                val suggestion = when (timeOfDay) {
+                    "morning" -> "Send a Good morning text to a family member"
+                    "mid-morning" -> "Reach out to a colleague with a quick 'Thank you.'"
+                    "afternoon" -> "Share a funny meme with a friend"
+                    "afternoon snack time" -> "Send a quick 'thinking of you' message "
+                    "dinner" -> "Call a friend or relative for a 5-minute catch-up "
+                    "night", "after dinner" -> "Leave a thoughtful comment on a friend's post "
+                    else -> "Invalid time. Try: Morning, Afternoon, Dinner, etc."
+                }
+
+                txtResult.text = suggestion
+            }
 
             }
 
