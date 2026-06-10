@@ -7,9 +7,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--Name of App-->
+
+
+<!--Main app layout -->
+
+
+    <!--Button 1 -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:text="Campsite Commander"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234"
+        tools:layout_editor_absoluteY="267dp"
+        tools:ignore="MissingConstraints" />
 
 
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/gearbutton"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:text="Add Gear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="564dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
